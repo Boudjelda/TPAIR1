@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="fr.univ.paris13.model">
+    <class name="Adresse" table="adresse">
+        <id name="id" column="id">
+            <generator class="assigned"/>
+        </id>
+
+        <property name="numero" column="numero"/>
+        <property name="rue" column="rue"/>
+        <property name="codePostal" column="code_postal"/>
+        <property name="ville" column="ville"/>
+        <property name="pays" column="pays"/>
+
+        <!-- Relation 1:p : une Adresse a plusieurs Personne -->
+        <set name="personnes" inverse="true">
+            <key column="id_adresse"/>
+            <one-to-many class="fr.univ.paris13.model.Personne"/>
+        </set>
+    </class>
+</hibernate-mapping>

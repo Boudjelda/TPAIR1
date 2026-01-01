@@ -1,0 +1,10 @@
+fr\univ\paris13\TestJPA.class
+fr\univ\paris13\hibernate\HibernateUtil.class
+fr\univ\paris13\Test.class
+fr\univ\paris13\model\JPA\JPAUtil.class
+fr\univ\paris13\model\Personne.class
+fr\univ\paris13\tp4air1\App.class
+fr\univ\paris13\model\Adresse.class
+fr\univ\paris13\TestJPAFULL.class
+fr\univ\paris13\model\JPA\Adresse.class
+fr\univ\paris13\model\JPA\Personne.class
